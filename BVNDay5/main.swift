@@ -12,12 +12,12 @@ func stepsToOne() {
     print("Bài 1: Nhập số nguyên dương")
     let input = readLine()
     guard let strNumber = input else {
-        print("số không hợp lệ (nil)")
+        print(-1)
         return
     }
     var n = Int(strNumber) ?? -1
     if n < 0 { // kiểm tra số có hợp lệ hay không (nguyên và > 0)
-        print("số không hợp lệ")
+        print(-1)
         stepsToOne()
         return
     }
